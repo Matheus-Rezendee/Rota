@@ -1,0 +1,784 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+:root{
+    --marromEscuro: #806753;
+    --marromClaro: #FFCEA6;
+}
+
+img{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+
+
+/*HEADER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+#navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    background-color: var(--marromEscuro);
+    z-index: 999;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10em ;
+
+}
+
+.navbar-logo img{
+    display: flex;
+    width: 92px;
+    size: 92px;
+}
+
+#botao-navbar-logo{
+    margin: 0%;
+    padding: 0%;
+    border: 0em;
+    background-color: var(--marromEscuro);
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-left: 110px;
+}
+
+.navbar-list ul{
+    font-size: 22px;
+    display: flex;
+    text-align: center;
+    gap: 4em;
+    padding-right: 300px;
+    margin: 0;
+}
+
+.navbar-list ul a{
+    color: var(--marromClaro);
+    white-space: nowrap;
+
+}
+
+.navbar-list ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#burguer{
+    display: none;
+    color: var(--marromClaro);
+    padding-right: 180px;
+}
+
+
+#burguer:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: none;
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a{
+    color: var(--marromClaro);
+}
+
+.mobile-menu ul a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/*MAIN --------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    padding-top: 250px;
+}
+
+#hash-paginainicial{
+    height: 5px;
+    width: 250px;
+    background-color: var(--marromEscuro);
+}
+
+#tituloExterno{
+    white-space: nowrap;
+    padding-top: 20px;
+    color: var(--marromEscuro);
+    font-size: 2.3em;
+}
+
+#subtituloExterno{
+    white-space: nowrap;
+    padding-top: 20px;
+    color: var(--marromEscuro);
+    font-size: 1.2em;
+}
+
+#custom-background {
+    position: absolute;
+    display: flex;
+    width: 32em;
+    height: 34em;
+    background: var(--marromEscuro);
+    top: -4em;
+    right: 1em;
+    bottom: -4em;
+    left: 10em;
+    z-index: -1;
+}
+
+#carouselExampleIndicators {
+    width: 600px; 
+    height: 435px;
+    margin: auto;
+  }
+
+  .carousel-item {
+    text-align: center;
+    width: 600px;
+    height: 420px;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%;
+    margin-left: 55px;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 70px; 
+    width: 70px; 
+    background-size: 100%, 100%; 
+  }
+
+  .carousel-indicators{
+    margin-left: 5.5em;
+    }
+  
+  .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.486);
+  }
+  
+  .carousel-indicators .active {
+    background-color: white; 
+  }
+
+  #saibaMaisBtn{
+    margin-top: 200px;
+    padding: 6em, 2rem, 1.1em;
+    border-radius: 4px;
+    border: var(--marromClaro);
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+    color: var(--marromClaro);
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 30px;
+    max-width: 153px;
+    white-space: nowrap;
+  }
+
+
+#saibaMaisBtn:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
+.container2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+}
+
+#titulo-texto{
+    margin-top: 200px;
+    text-align: center;
+    color: var(--marromEscuro);
+    font-size: 2em;
+}
+
+#subtitulo-texto{
+    text-align: center;
+    color: var(--marromEscuro);
+}
+
+.paragrafos{
+    text-align: center;
+    width: 900px;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 0px 100px 0px 100px;
+    letter-spacing: 1px;
+    line-height: 180%;
+    text-indent: 70px;
+}
+
+#fotomandioca-paginainicial{
+    height: 400px;
+    width: 600px;
+    margin-right: 100px;
+}
+
+#container3{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-panorama{
+    margin-top: 60px;
+    color: var(--marromEscuro);
+    font-size: 2em;
+    text-align: center;
+}
+
+#botao-panorama{
+    text-align: center;
+}
+
+#saibamais-panorama{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    border: var(--marromClaro);
+    background-color: var(--marromEscuro);
+    font-weight: 800;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+    color: var(--marromClaro);
+    white-space: nowrap;
+}
+
+#saibamais-panorama:hover{
+    background-color: transparent;
+    color: var(--marromEscuro);
+    outline: 2px solid var(--marromEscuro);
+    cursor: pointer;
+}
+
+
+/*FOOTER ------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+footer{
+    height: 350px;
+    background-color: var(--marromEscuro);
+}
+
+#footer-container{
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#footer-text{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#logo-footer{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#footer-contacts{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+
+#footer-contacts i{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#footer-contacts i:hover{
+    color: var(--marromClaro);
+}
+
+#footer-navbar{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#footer-navbar ul{
+    display: flex;
+    font-size: 22px;
+    text-align: center;
+    gap: 5.5em;
+}
+
+#footer-navbar ul a{
+    color: white;
+    white-space: nowrap;
+}
+
+#footer-navbar ul a:hover{
+    color: var(--marromClaro);
+}
+
+/*MEDIA-QUERIES -----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 1900px){
+    .navbar-list ul{
+        font-size: 25px;
+        gap: 5.5em;
+        padding-right: 200px;
+
+    }
+
+    #footer-navbar ul{
+        gap: 7em;
+    }
+}
+
+@media(max-width: 1400px){
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 6em;
+    }
+
+    #custom-background {
+        position: absolute;
+        display: flex;
+        width: 26em;
+        height: 34em;
+        background: var(--marromEscuro);
+        top: -4em;
+        right: 1em;
+        bottom: -4em;
+        left: 10em;
+        z-index: -1;
+    }
+
+    #carouselExampleIndicators {
+        width: 500px; 
+        height: 355px;
+        margin: auto;
+      }
+    
+      .carousel-item {
+        text-align: center;
+        width: 600px;
+        height: 420px;
+      }
+      
+      .carousel-control-prev, .carousel-control-next {
+        width: 20%;
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 70px; 
+        width: 70px; 
+        background-size: 100%, 100%; 
+      }
+    
+      .carousel-indicators{
+        display: none;
+        margin-left: 5.5em;
+        }
+
+    .paragrafos{
+        text-align: center;
+        width: 800px;
+        font-size: 1em;
+        text-align: justify;
+        padding: 0px 100px 0px 100px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+    }
+    
+    #fotomandioca-paginainicial{
+        height: 350px;
+        width: 500px;
+        margin-right: 100px;
+    }
+    
+}
+
+@media(max-width: 1250px){
+    main{
+        padding-top: 180px;
+    }
+
+    #navbar{
+        display: flex;
+        padding: 13px 0 13px 1em;
+        gap: 3em; 
+        position: relative;
+    }
+
+    .navbar-list ul{
+        display: none;
+    }
+
+    .navbar-logo{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5em;
+    
+    }
+
+    #burguer{
+        display: flex;
+    }
+
+    .mobile-menu{
+        background-color: var(--marromEscuro);
+        height: 23em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+
+    }
+
+    .mobile-menu ul a{
+        display: block;
+        padding-top: 1.2rem;
+        border-top: 0.0625rem solid rgba(0, 0, 0, 0.171);
+        border-radius: 0%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    .paragrafos{
+        text-align: center;
+        width: 650px;
+        font-size: 1em;
+        text-align: justify;
+        padding: 0px 100px 0px 100px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+    }
+    
+    #fotomandioca-paginainicial{
+        height: 300px;
+        width: 450px;
+        margin-right: 100px;
+    }
+
+}
+
+@media(max-width: 1023px){
+    footer{
+        display: flex;
+        height: 430px;
+    }
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 150px;
+        width: 150px;
+        order: 2;
+        align-items: center;
+    }
+
+    #footer-contacts{
+        order: 3;
+    }
+
+    #footer-contacts i{
+        font-size: 1.4em;
+    }
+
+    #footer-text{
+        font-size: 14px;
+        order: 4;
+    }
+
+    #footer-navbar{
+        width: 50%;
+        order: 5;
+        margin: 30px 34px 30px 30px;
+    }
+
+    #footer-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.7em;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    main{
+        padding-top: 80px;
+    }
+
+    #navbar{
+        gap: 2em;
+    }  
+
+    #custom-background {
+        width: 24em;
+        height: 19em;
+        left: -20%;
+        top: 2em;
+    }
+
+    #hash-paginainicial{
+        height: 5px;
+        width: 60%;
+        background-color: var(--marromEscuro);
+        margin: auto;
+    }
+
+    #tituloExterno{
+        text-align: center;
+        white-space: nowrap;
+        padding-top: 20px;
+        font-weight: 700;
+        color: var(--marromEscuro);
+        font-size: 1.4em;
+    }
+
+    #subtituloExterno{
+        text-align: center;
+        white-space: nowrap;
+        padding-top: 20px;
+        color: var(--marromEscuro);
+        font-size: 1em;
+    }
+    
+    #carouselExampleIndicators {
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-inner{
+        margin-left: 60px;
+        padding-top: 75px;
+    }
+
+    .carousel-item {
+        text-align: center;
+        width: 350px;
+        height: 220px;
+      }
+
+      .carousel-control-prev, .carousel-control-next {
+        width: 40%;
+        margin-left: 15px;
+      }
+
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 40px; 
+        width: 40px; 
+        background-size: 100%, 100%; 
+      }
+
+
+    #saibaMaisBtn{
+        text-align: center;
+        margin: auto;
+        margin-left: 38%;
+        padding: 6em, 2rem, 1.1em;
+        border-radius: 4px;
+        border: var(--marromClaro);
+        background-color: var(--marromEscuro);
+        font-weight: 800;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+        color: var(--marromClaro);
+        padding-left: 5px;
+        padding-right: 5px;
+        min-width: 0px;
+        max-width: 153px;
+        white-space: nowrap;
+      }
+
+      #container3{
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div-imagem-panorama{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #imagem-panorama{
+        margin: auto;
+        width: 100vw;
+        height: 80px;
+    }
+    
+    #texto-panorama{
+        margin-top: 60px;
+        width: 380px;
+        margin: auto;
+        color: var(--marromEscuro);
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    #saibamais-panorama{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        border: var(--marromClaro);
+        background-color: var(--marromEscuro);
+        font-weight: 800;
+        font-size: 1em;
+        text-transform: uppercase;
+        box-shadow: 0em, -0.2em 0em var(--marromClaro) inset;
+        color: var(--marromClaro);
+        white-space: nowrap;
+    }
+
+    footer{
+        display: flex;
+        height: 350px;
+    }
+
+    .container2{
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+    }
+
+    #titulo-texto{
+        margin-top: 80px;
+        text-align: center;
+        color: var(--marromEscuro);
+        font-size: 1.5em;
+    }
+
+    .paragrafos{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 380px;
+        font-size: 1em;
+        margin: auto;
+        text-align: justify;
+        padding: 0px;
+        letter-spacing: 1px;
+        line-height: 180%;
+        text-indent: 70px;
+    }
+    
+    #fotomandioca-paginainicial{
+        height: 175px;
+        width: 300px;
+        margin: 40px 30px 0px 30px;
+    }
+
+
+    #footer-container{
+       grid-template-columns: min-content;
+       gap: 3rem;
+       width: 50%;
+       order: 1;
+       margin: 30px 30px 20px 70px;
+    }
+
+    #logo-footer{
+        height: 100px;
+        width: 100px;
+        order: 2;
+        align-items: center;
+    }
+
+    #footer-contacts{
+        order: 3;  
+    }
+
+    #footer-contacts i{
+        font-size: 1.2em;
+    }
+
+    #footer-text{
+        font-size: 10px;
+        order: 4;
+    }
+
+    #footer-navbar{
+        width: 50%;
+        order: 5;
+        margin: 30px 34px 30px 30px;
+    }
+
+    #footer-navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        font-size: 15px;
+    }
+
+}
